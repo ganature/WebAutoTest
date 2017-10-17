@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170914 11:33:23.658" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="E:\SoftTest\自动化测试\RobotFramework-web\WebAutoTest\TestSuites\loginsuite.robot" id="s1" name="Loginsuite">
+<test id="s1-t1" name="login001">
+<kw name="登录验证测试" library="登录测试用例">
+<arguments>
+<arg>qxd001</arg>
+<arg>123456</arg>
+<arg>expectation=None</arg>
+</arguments>
+<kw name="打开浏览器" library="浏览器基本操作">
+<arguments>
+<arg>http://112.74.185.137/login.html</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>url=${url}</arg>
+<arg>browser=${browser}</arg>
+</arguments>
+<msg timestamp="20170914 11:33:23.875" level="INFO">Opening browser 'chrome' to base url 'http://112.74.185.137/login.html'</msg>
+<status status="PASS" endtime="20170914 11:33:28.219" starttime="20170914 11:33:23.875"></status>
+</kw>
+<status status="PASS" endtime="20170914 11:33:28.219" starttime="20170914 11:33:23.875"></status>
+</kw>
+<kw name="输入用户名" library="LoginPage">
+<arguments>
+<arg>${username} qxd001</arg>
+</arguments>
+<kw name="清除输入框内容" library="定位元素操作">
+<arguments>
+<arg>&amp;{LoginVariable}[name_id]</arg>
+</arguments>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" endtime="20170914 11:33:28.302" starttime="20170914 11:33:28.223"></status>
+</kw>
+<status status="PASS" endtime="20170914 11:33:28.302" starttime="20170914 11:33:28.221"></status>
+</kw>
+<kw name="输入框输入内容" library="定位元素操作">
+<arguments>
+<arg>&amp;{LoginVariable}[name_id]</arg>
+<arg>${username}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20170914 11:33:28.303" level="INFO">Typing text 'qxd001 qxd001' into text field 'loginName_id'</msg>
+<status status="PASS" endtime="20170914 11:33:28.399" starttime="20170914 11:33:28.303"></status>
+</kw>
+<status status="PASS" endtime="20170914 11:33:28.399" starttime="20170914 11:33:28.302"></status>
+</kw>
+<status status="PASS" endtime="20170914 11:33:28.399" starttime="20170914 11:33:28.220"></status>
+</kw>
+<kw name="输入密码" library="LoginPage">
+<arguments>
+<arg>${password}</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20170914 11:33:28.400" level="FAIL">Keyword 'LoginPage.输入密码' expected 1 argument, got 2.</msg>
+<status status="FAIL" endtime="20170914 11:33:28.400" starttime="20170914 11:33:28.400"></status>
+</kw>
+<status status="FAIL" endtime="20170914 11:33:28.400" starttime="20170914 11:33:23.874"></status>
+</kw>
+<status status="FAIL" endtime="20170914 11:33:28.400" critical="yes" starttime="20170914 11:33:23.874">Keyword 'LoginPage.输入密码' expected 1 argument, got 2.</status>
+</test>
+<status status="FAIL" endtime="20170914 11:33:28.401" starttime="20170914 11:33:23.660"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Loginsuite" pass="0">Loginsuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
