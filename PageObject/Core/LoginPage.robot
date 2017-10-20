@@ -28,3 +28,5 @@ Resource          ../../基本操作/Baseoperator.robot
     [Arguments]    ${second}
     #等待固定时间
     等待固定时长     ${second}
+
+

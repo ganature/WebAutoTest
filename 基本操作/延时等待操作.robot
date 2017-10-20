@@ -10,4 +10,7 @@ Resource          ../share_resource.robot
 等待至元素可见
     [Arguments]    ${locator}
     #等待至元素可见
-    Wait Until Element isVisible    ${locator}
+    Wait Until Element is Visible    ${locator}
+
+
+

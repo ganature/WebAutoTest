@@ -14,8 +14,9 @@ ${excel_path}     F:\\MyDownloads\\data.xlsx
     \    log    ${i[1]}
 
 读取Excel数据
-    [Arguments]    ${module_name}    ${test_case_name}
+    [Documentation]    0000
+    [Arguments]    ${module_name}
     #打开测试数据文件
     Open Excel Xlxs    ${excel_path}
-    @{data}    Get TestCase Parmerner    ${module_name}    ${test_case_name}
-    log    @{data}[0]
+    @{data}    get_cols_vaules    ${module_name}
+    [Return]    @{data}

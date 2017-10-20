@@ -1,6 +1,7 @@
 import sqlite3
 par={'u':11,'p':22}
-
+import time
+'''
 def data():
     con=sqlite3.connect(database='test.db')
     cur=con.cursor()
@@ -33,3 +34,7 @@ print list3
 print"list1 = %s" % list1
 print"list2 = %s" % list2
 print"list3 = %s" % list3
+'''
+    print re
+if __name__ == '__main__':
+    a()

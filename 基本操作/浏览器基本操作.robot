@@ -44,7 +44,6 @@ Resource          ../share_resource.robot
     #刷新页面
     Reload Page
 
-
 切换窗口
     [Arguments]    ${locator}
     [Documentation]    Strategy

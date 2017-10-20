@@ -112,6 +112,20 @@ class OpenXlxsLibrary:
             data_dic[pid] = temp_list
         return data_dic[test_case_name]
 
+    def get_cols_vaules(self,sheet_name):
+        max_row = self.get_max_row (sheet_name)
+        max_column = self.get_max_col (sheet_name)
+        ws = self.get_sheet (sheet_name)
+        col_list=[]
+        for ro in range (2, max_row + 1):
+            list = []
+            for col in range (2, max_column + 1):
+                c = ws.cell (row=ro, column=col).value
+                c = str (c)
+                list.append (c)
+            col_list.append(list)
+        return col_list
+
     def get_data(self,sheet_name,test_case_name):
         data=self.get_TestCase_Parmerner(sheet_name,test_case_name)
         print type(data)
