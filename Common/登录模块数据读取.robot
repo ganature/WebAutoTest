@@ -8,4 +8,4 @@ ${module_name}    LoginTest
 LoginTest读取数据
     [Arguments]    ${test_case_name}
     [Tags]    登录模块测试
-    读取Excel数据    ${module_name}    ${test_case_name}
+    读取Exce2007数据    ${module_name}    ${test_case_name}

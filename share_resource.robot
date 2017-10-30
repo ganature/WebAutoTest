@@ -4,6 +4,4 @@ Library           Selenium2Library
 Library           OperatingSystem
 Library           Screenshot
 Library           Process
-Library           DatabaseLibrary
-
-*** Keywords ***
+Library           ExcelLibrary

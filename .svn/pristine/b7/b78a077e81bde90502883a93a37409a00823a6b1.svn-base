@@ -1,0 +1,10 @@
+*** Settings ***
+Library           Selenium2Library
+Library           ExcelLibrary
+Library           OperatingSystem
+Library           EmailLibrary.py
+Library           Screenshot
+Library           Process
+
+
+*** Keywords ***

@@ -2,9 +2,8 @@
 Resource          ../PageObject/Core/LoginPage.robot
 Resource          ../setting.robot
 
+
 *** Variables ***
-${Gis_Url}        %{Gis_Url}    # Gis地址
-${Browser}        %{Browser}    # 浏览器类型
 
 *** Keywords ***
 登录验证测试

@@ -7,13 +7,18 @@ Resource          ../Common/测试数据.robot
 Resource          ../Common/数据库操作.robot
 Resource          ../share_resource.robot
 Resource          ../setting.robot
+Library           OperatingSystem
+Library           RequestsLibrary
 
 *** Variables ***
 ${list}           None
+${url}            http://bugfree:81/zentao/testtask-report-1-12-all-0-0.html
+${alias}          bugfree
 
 *** Test Cases ***
 data
-    @{data}    读取Excel数据    LoginTest
+    initial_config
+    @{data}    读取Exce2007数据    LoginTest
     : FOR    ${row}    IN    @{data}
     \    ${username}    Set Variable    ${row[0]}
     \    log    ${username}
@@ -27,3 +32,8 @@ test_path
     Screenshot.Set Screenshot Directory    %{G_Screenshoot_Path}
     @{date}=    Get Time    year month day
     Take Screenshot    ${TEST NAME}_Screenshoot
+
+test_reque
+    Create Session    ${alias}    ${url}
+    ${data}    Get Request    ${alias}    ${url}
+    log    ${data.content}

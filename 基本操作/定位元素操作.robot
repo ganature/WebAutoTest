@@ -1,6 +1,7 @@
 *** Settings ***
 Resource          ../share_resource.robot
 
+
 *** Keywords ***
 点击元素
     [Arguments]    ${locator}
@@ -21,6 +22,7 @@ Resource          ../share_resource.robot
     ...    Key attributes for links are `id`, `name`, `href` and link text. See `introduction` for details about locating elements.
     #点击链接元素    #定位属性：id name href linktext
     Click Link    ${locator}
+
 点击按钮
     [Arguments]    ${locator}
     [Documentation]    Name:
@@ -52,3 +54,8 @@ Resource          ../share_resource.robot
     [Arguments]    ${locator}
     #清除输入框内容
     Clear Element Text    ${locator}
+
+执行Js
+    [Arguments]  ${js}
+    #执行js
+    execute javascript  ${js}

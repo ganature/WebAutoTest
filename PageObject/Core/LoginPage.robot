@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation     定义了登录页面的用户名、密码、和登录按钮的元素定位的“locator”
-Resource          ../../基本操作/Baseoperator.robot
+Resource          ../../基本操作/BaseOperator.robot
 
 *** Variables ***
 &{LoginVariable}    name_id=loginName_id    password_id=password_id    login_id=my_login_bt
@@ -27,6 +27,4 @@ Resource          ../../基本操作/Baseoperator.robot
 延迟等待
     [Arguments]    ${second}
     #等待固定时间
-    等待固定时长     ${second}
-
-
+    等待固定时长    ${second}

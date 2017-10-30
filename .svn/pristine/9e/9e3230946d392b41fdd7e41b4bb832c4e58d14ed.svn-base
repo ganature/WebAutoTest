@@ -1,0 +1,24 @@
+*** Settings ***
+Resource          ../TestCases/Core.robot
+Resource          ../TestCases/登录测试用例.robot
+Resource          ../辅助工具/测试数据.robot
+Resource          ../辅助工具/登录模块数据读取.robot
+Resource          ../辅助工具/测试数据.robot
+
+*** Variables ***
+${lis}            [1,2,3,4]
+${list}           None
+
+*** Test Cases ***
+login001
+    ${data}=    LoginTest读取数据    LoginTest001
+    log    ${data}
+    Comment    ${username}=    ${data[0]}
+    Comment    log    ${username}
+    Comment    ${password}=    ${data[1]}
+    Comment    log    ${password}
+    log    ${lis}
+
+get data
+    ${useraname}=    读取数据    LoginTest    LoginTest001
+    log    ${useraname}

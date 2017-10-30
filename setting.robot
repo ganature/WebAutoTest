@@ -8,3 +8,5 @@ initial_config
     #Project Setting
     Set Environment Variable    G_Project_Path    ${CURDIR}
     Set Environment Variable    G_Screenshoot_Path    %{G_Project_Path}\\TestSuites\\Screenshoot
+    #Data Config
+    Set Environment Variable    G_Excel_Path

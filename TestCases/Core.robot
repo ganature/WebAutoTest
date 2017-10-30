@@ -2,7 +2,8 @@
 Resource          ../基本操作/浏览器基本操作.robot
 
 *** Variables ***
- ${url}
+${url}            ${EMPTY}
+
 *** Keywords ***
 Common_setUp
     #获取环境配置文件信息

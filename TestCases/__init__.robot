@@ -1,3 +1,2 @@
 *** Settings ***
-Resource          ../PageObject/Core/Page.robot
-Resource          ../PageObject/Core/LoginPage.robot
+Documentation  业务流程的封装

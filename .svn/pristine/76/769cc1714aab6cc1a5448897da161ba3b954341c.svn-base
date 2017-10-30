@@ -1,0 +1,10 @@
+*** Settings ***
+Library           Selenium2Library
+Library           ExcelLibrary
+Library           OperatingSystem
+Library           C:/Python27/Lib/site-packages/EmailLibrary/EmailLibrary.py
+Library           Screenshot
+Library           Process
+
+
+*** Keywords ***

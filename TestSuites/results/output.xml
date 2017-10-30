@@ -1,80 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170922 16:30:23.178" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-	<suite source="F:\svn\TestSuites" id="s1" name="TestSuites">
-		<suite source="F:\svn\TestSuites\loginsuite.robot" id="s1-s1"
-			name="Loginsuite">
-			<test id="s1-s1-t1" name="login002">
-				<kw name="LoginTest读取数据" library="登录模块数据读取">
-					<tags>
-						<tag>登录模块测试</tag>
-					</tags>
-					<arguments>
-						<arg>LoginTest001</arg>
-					</arguments>
-					<assign>
-						<var>${a}</var>
-					</assign>
-					<kw name="读取Excel数据" library="测试数据">
-						<arguments>
-							<arg>${module_name}</arg>
-							<arg>${test_case_name}</arg>
-						</arguments>
-						<kw name="Open Excel Xlxs" library="OpenXlxsLibrary">
-							<doc>:param filename:</doc>
-							<arguments>
-								<arg>${excel_path}</arg>
-							</arguments>
-							<status status="PASS" endtime="20170922 16:30:23.986"
-								starttime="20170922 16:30:23.980"></status>
-						</kw>
-						<kw name="Get TestCase Parmerner" library="OpenXlxsLibrary">
-							<doc>:param sheet_name: sheet名，也是测试模块名</doc>
-							<arguments>
-								<arg>${module_name}</arg>
-								<arg>${test_case_name}</arg>
-							</arguments>
-							<status status="PASS" endtime="20170922 16:30:23.987"
-								starttime="20170922 16:30:23.986"></status>
-						</kw>
-						<kw name="Comment" library="BuiltIn">
-							<doc>Displays the given messages in the log file as keyword
-								arguments.</doc>
-							<arguments>
-								<arg>Get Data</arg>
-								<arg>${module_name}</arg>
-								<arg>${test_case_name}</arg>
-							</arguments>
-							<status status="PASS" endtime="20170922 16:30:23.987"
-								starttime="20170922 16:30:23.987"></status>
-						</kw>
-						<status status="PASS" endtime="20170922 16:30:23.988"
-							starttime="20170922 16:30:23.979"></status>
-					</kw>
-					<msg timestamp="20170922 16:30:23.988" level="INFO">${a} = None</msg>
-					<status status="PASS" endtime="20170922 16:30:23.988"
-						starttime="20170922 16:30:23.979"></status>
-				</kw>
-				<status status="PASS" endtime="20170922 16:30:23.988"
-					critical="yes" starttime="20170922 16:30:23.978"></status>
-			</test>
-			<status status="PASS" endtime="20170922 16:30:23.988"
-				starttime="20170922 16:30:23.198"></status>
-		</suite>
-		<status status="PASS" endtime="20170922 16:30:23.989"
-			starttime="20170922 16:30:23.181"></status>
-	</suite>
-	<statistics>
-		<total>
-			<stat fail="0" pass="1">Critical Tests</stat>
-			<stat fail="0" pass="1">All Tests</stat>
-		</total>
-		<tag>
-		</tag>
-		<suite>
-			<stat fail="0" id="s1" name="TestSuites" pass="1">TestSuites</stat>
-			<stat fail="0" id="s1-s1" name="Loginsuite" pass="1">TestSuites.Loginsuite</stat>
-		</suite>
-	</statistics>
-	<errors>
-	</errors>
+<robot generated="20171030 11:09:59.088" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="F:\svn\TestSuites" id="s1" name="TestSuites">
+<suite source="F:\svn\TestSuites\loginsuite.robot" id="s1-s1" name="Loginsuite">
+<test id="s1-s1-t1" name="test_reque">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>baidu</arg>
+<arg>http://www.baidu.com</arg>
+</arguments>
+<msg timestamp="20171030 11:09:59.337" level="INFO">Creating Session using : alias=baidu, url=http://www.baidu.com, headers={},                     cookies=None, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" endtime="20171030 11:09:59.337" starttime="20171030 11:09:59.337"></status>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<doc>Send a GET request on the session object found using the</doc>
+<arguments>
+<arg>baidu</arg>
+<arg>http://www.baidu.com</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20171030 11:09:59.404" level="INFO">Get Request using : alias=baidu, uri=http://www.baidu.com, headers=None json=None</msg>
+<msg timestamp="20171030 11:09:59.404" level="INFO">${data} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20171030 11:09:59.404" starttime="20171030 11:09:59.337"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20171030 11:09:59.404" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20171030 11:09:59.404" starttime="20171030 11:09:59.404"></status>
+</kw>
+<status status="PASS" endtime="20171030 11:09:59.404" critical="yes" starttime="20171030 11:09:59.337"></status>
+</test>
+<status status="PASS" endtime="20171030 11:09:59.404" starttime="20171030 11:09:59.120"></status>
+</suite>
+<status status="PASS" endtime="20171030 11:09:59.404" starttime="20171030 11:09:59.104"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSuites" pass="1">TestSuites</stat>
+<stat fail="0" id="s1-s1" name="Loginsuite" pass="1">TestSuites.Loginsuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20171030 11:09:59.224" level="ERROR">Error in file 'F:\svn\share_resource.robot': Importing test library 'MongodbLibrary' failed: ImportError: No module named MongodbLibrary
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python27\python27.zip
+  C:\Python27\DLLs
+  C:\Python27\lib
+  C:\Python27\lib\plat-win
+  C:\Python27\lib\lib-tk
+  C:\Python27
+  C:\Python27\lib\site-packages
+  C:\Python27\lib\site-packages\win32
+  C:\Python27\lib\site-packages\win32\lib
+  C:\Python27\lib\site-packages\Pythonwin
+  C:\Python27\lib\site-packages\wx-2.8-msw-unicode</msg>
+<msg timestamp="20171030 11:09:59.273" level="ERROR">Error in file 'F:\svn\Common\测试数据.robot': Importing test library 'F:\svn\Common\OpenXlxsLibrary\OpenXlxsLibrary.py' failed: ImportError: No module named openpyxl
+Traceback (most recent call last):
+  File "F:\svn\Common\OpenXlxsLibrary\OpenXlxsLibrary.py", line 3, in &lt;module&gt;
+    from openpyxl import load_workbook
+PYTHONPATH:
+  C:\Python27\python27.zip
+  C:\Python27\DLLs
+  C:\Python27\lib
+  C:\Python27\lib\plat-win
+  C:\Python27\lib\lib-tk
+  C:\Python27
+  C:\Python27\lib\site-packages
+  C:\Python27\lib\site-packages\win32
+  C:\Python27\lib\site-packages\win32\lib
+  C:\Python27\lib\site-packages\Pythonwin
+  C:\Python27\lib\site-packages\wx-2.8-msw-unicode</msg>
+<msg timestamp="20171030 11:09:59.273" level="ERROR">Error in file 'F:\svn\Common\数据库操作.robot': Importing test library 'DatabaseLibrary' failed: ImportError: No module named DatabaseLibrary
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python27\python27.zip
+  C:\Python27\DLLs
+  C:\Python27\lib
+  C:\Python27\lib\plat-win
+  C:\Python27\lib\lib-tk
+  C:\Python27
+  C:\Python27\lib\site-packages
+  C:\Python27\lib\site-packages\win32
+  C:\Python27\lib\site-packages\win32\lib
+  C:\Python27\lib\site-packages\Pythonwin
+  C:\Python27\lib\site-packages\wx-2.8-msw-unicode</msg>
+</errors>
 </robot>
