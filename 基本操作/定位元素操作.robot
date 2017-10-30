@@ -21,7 +21,6 @@ Resource          ../share_resource.robot
     ...    Key attributes for links are `id`, `name`, `href` and link text. See `introduction` for details about locating elements.
     #点击链接元素    #定位属性：id name href linktext
     Click Link    ${locator}
-
 点击按钮
     [Arguments]    ${locator}
     [Documentation]    Name:

@@ -1,11 +1,13 @@
 *** Settings ***
 Resource          ../share_resource.robot
+Library           Selenium2Library
 
 *** Keywords ***
 打开浏览器
     [Arguments]    ${url}    ${browser}    # 网站地址|浏览器类型
     #打开浏览器    网站地址    浏览器类型
     Open Browser    url=${url}    browser=${browser}
+
 
 关闭当前浏览器
     #关闭当前浏览器

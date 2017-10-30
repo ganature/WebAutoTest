@@ -21,3 +21,4 @@ Resource          ../share_resource.robot
     [Arguments]    ${locator}    ${message}
     #检查元素文本
     Element Text Should Be    locator=${locator}    message=${message}
+    

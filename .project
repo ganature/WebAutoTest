@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>WebAutoTest</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<variableList>
+		<variable>
+			<name>Python</name>
+			<value>file:/C:/Python27/Lib/site-packages</value>
+		</variable>
+	</variableList>
+</projectDescription>
