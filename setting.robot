@@ -1,5 +1,6 @@
 *** Settings ***
 Library           OperatingSystem
+Library           Common/ConfigLibrary/ConfigLibrary.py
 
 *** Keywords ***
 initial_config

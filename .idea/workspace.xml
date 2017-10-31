@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="d08bd5bd-4ea4-48ac-8480-17ec793dcadd" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Common/ConfigLibrary" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/ASUS.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Common/ConfigLibrary/ConfigLibrary.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/TestSuites/log.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/TestSuites/output.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/TestSuites/report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/基本操作/Baseoperator.robot" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/辅助工具/__init__.robot" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/辅助工具/测试数据.robot" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/辅助工具/登录模块数据读取.robot" afterPath="" />
@@ -17,7 +20,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/数据库操作.robot" afterPath="$PROJECT_DIR$/Common/数据库操作.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/测试数据.robot" afterPath="$PROJECT_DIR$/Common/测试数据.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/登录模块数据读取.robot" afterPath="$PROJECT_DIR$/Common/登录模块数据读取.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PageObject/Core/LoginPage.robot" afterPath="$PROJECT_DIR$/PageObject/Core/LoginPage.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestCases/Core.robot" afterPath="$PROJECT_DIR$/TestCases/Core.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestCases/__init__.robot" afterPath="$PROJECT_DIR$/TestCases/__init__.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestCases/登录测试用例.robot" afterPath="$PROJECT_DIR$/TestCases/登录测试用例.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestSuites/loginsuite.robot" afterPath="$PROJECT_DIR$/TestSuites/loginsuite.robot" />
@@ -29,7 +34,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/基本操作/定位元素操作.robot" afterPath="$PROJECT_DIR$/基本操作/定位元素操作.robot" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/PageObject/Core/__init__.txt" afterPath="$PROJECT_DIR$/PageObject/Core/__init__.robot" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/exl.py" afterPath="$PROJECT_DIR$/xl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/基本操作/Baseoperator.robot" afterPath="$PROJECT_DIR$/基本操作/BaseOperator.robot" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,20 +47,40 @@
       <file leaf-file-name="loginsuite.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestSuites/loginsuite.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="0">
               <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenXlxsLibrary.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/OpenXlxsLibrary/OpenXlxsLibrary.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1409">
+              <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="35" />
               <folding>
-                <marker date="1509346987279" expanded="true" signature="0:359" ph="*** Settings ***" />
+                <element signature="e#16#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenXlxsLibrary.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Common/OpenXlxsLibrary/OpenXlxsLibrary.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/OpenXlxsLibrary/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-361">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigLibrary.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Common/ConfigLibrary/ConfigLibrary.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -111,8 +135,6 @@
               <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
                 <element signature="e#0#118#0" expanded="true" />
-                <marker date="1509333720796" expanded="true" signature="231:669" ph="*** Keywords ***" />
-                <marker date="1509333720796" expanded="true" signature="609:669" ph="延迟等待" />
               </folding>
             </state>
           </provider>
@@ -130,37 +152,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Core.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCases/Core.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCases/__init__.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Robot Test Suite" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -196,12 +194,13 @@
         <option value="$PROJECT_DIR$/TestSuites/demosuite.robot" />
         <option value="$PROJECT_DIR$/share_resource.robot" />
         <option value="$PROJECT_DIR$/TestSuites/loginsuite.robot" />
+        <option value="$PROJECT_DIR$/Common/ConfigLibrary/ConfigLibrary.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="115" />
-    <option name="y" value="121" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="121" />
+    <option name="y" value="260" />
     <option name="width" value="1649" />
     <option name="height" value="864" />
   </component>
@@ -245,34 +244,94 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="svn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="svn" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAutoTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="svn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="svn" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAutoTest" type="462c0819:PsiDirectoryNode" />
               <item name="Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="svn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="svn" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAutoTest" type="462c0819:PsiDirectoryNode" />
               <item name="Common" type="462c0819:PsiDirectoryNode" />
               <item name="OpenXlxsLibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="AppiumLibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="AppiumLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="keywords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="AppiumLibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="AppiumLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="keywords" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -392,16 +451,16 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="F:\svn" />
-          <option name="myCopyRoot" value="F:\svn" />
+          <option name="myVcsRoot" value="E:\AutoTest\AutoTest\WebAutoTest" />
+          <option name="myCopyRoot" value="E:\AutoTest\AutoTest\WebAutoTest" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="F:\svn" />
-          <option name="myCopyRoot" value="F:\svn" />
+          <option name="myVcsRoot" value="E:\AutoTest\AutoTest\WebAutoTest" />
+          <option name="myCopyRoot" value="E:\AutoTest\AutoTest\WebAutoTest" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -448,18 +507,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="115" y="121" width="1649" height="864" extended-state="0" />
+    <frame x="121" y="260" width="1649" height="864" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29955947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30333543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.49276274" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997253" sideWeight="0.2630585" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997253" sideWeight="0.73694146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.47954687" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.47199497" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997253" sideWeight="0.73694146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24984267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25824177" sideWeight="0.46633103" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49779737" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -502,15 +562,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/abc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1265">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/openpyxl/cell/interface.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/openpyxl/cell/cell.py" />
     <entry file="file://C:/Python27/Lib/site-packages/openpyxl/formula/tokenizer.py" />
     <entry file="file://C:/Python27/Lib/site-packages/openpyxl/conftest.py" />
     <entry file="file://C:/Python27/Lib/site-packages/openpyxl/.constants.json" />
@@ -630,7 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/基本操作/BaseOperator.robot">
+    <entry file="file://$PROJECT_DIR$/基本操作/Baseoperator.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
@@ -677,7 +728,7 @@
         <state relative-caret-position="22">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -687,7 +738,7 @@
         <state relative-caret-position="242">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -723,8 +774,6 @@
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
             <element signature="e#0#118#0" expanded="true" />
-            <marker date="1509333720796" expanded="true" signature="231:669" ph="*** Keywords ***" />
-            <marker date="1509333720796" expanded="true" signature="609:669" ph="延迟等待" />
           </folding>
         </state>
       </provider>
@@ -767,24 +816,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-727">
           <caret line="71" column="41" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestSuites/loginsuite.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="0">
           <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <marker date="1509346987279" expanded="true" signature="0:359" ph="*** Settings ***" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/AppiumLibrary/keywords/_applicationmanagement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/OpenXlxsLibrary/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/OpenXlxsLibrary/OpenXlxsLibrary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="-1409">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#16#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/ConfigLibrary/ConfigLibrary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding />
         </state>
       </provider>
