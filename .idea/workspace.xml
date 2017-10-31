@@ -79,8 +79,8 @@
       <file leaf-file-name="ConfigLibrary.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Common/ConfigLibrary/ConfigLibrary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+            <state relative-caret-position="255">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -198,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="121" />
     <option name="y" value="260" />
     <option name="width" value="1649" />
@@ -247,21 +247,6 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutoTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="OpenXlxsLibrary" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="WebAutoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -507,7 +492,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="121" y="260" width="1649" height="864" extended-state="1" />
+    <frame x="121" y="260" width="1649" height="864" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30333543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -855,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/ConfigLibrary/ConfigLibrary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
