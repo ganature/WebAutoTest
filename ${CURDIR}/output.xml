@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171106 18:07:52.198" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="E:\GitHub\WebAutoTest" id="s1" name="WebAutoTest">
+<suite source="E:\GitHub\WebAutoTest\TestSuites" id="s1-s1" name="TestSuites">
+<suite source="E:\GitHub\WebAutoTest\TestSuites\loginsuite.robot" id="s1-s1-s1" name="Loginsuite">
+<test id="s1-s1-s1-t1" name="test_login">
+<kw name="登录验证测试" library="登录测试用例">
+<doc>登录流程：</doc>
+<arguments>
+<arg>qiaoxd</arg>
+<arg>111111</arg>
+</arguments>
+<kw name="initial_config" library="setting">
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>Gis_Url</arg>
+<arg>http://120.77.216.30/ptt/a/login</arg>
+</arguments>
+<msg timestamp="20171106 18:07:53.003" level="INFO">Environment variable 'Gis_Url' set to value 'http://120.77.216.30/ptt/a/login'.</msg>
+<status status="PASS" endtime="20171106 18:07:53.003" starttime="20171106 18:07:53.003"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>Browser</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20171106 18:07:53.004" level="INFO">Environment variable 'Browser' set to value 'Chrome'.</msg>
+<status status="PASS" endtime="20171106 18:07:53.004" starttime="20171106 18:07:53.004"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_Project_Path</arg>
+<arg>E:\\GitHub\\WebAutoTest</arg>
+</arguments>
+<msg timestamp="20171106 18:07:53.005" level="INFO">Environment variable 'G_Project_Path' set to value 'E:\GitHub\WebAutoTest'.</msg>
+<status status="PASS" endtime="20171106 18:07:53.005" starttime="20171106 18:07:53.005"></status>
+</kw>
+<kw name="Set Environment Variable" library="OperatingSystem">
+<doc>Sets an environment variable to a specified value.</doc>
+<arguments>
+<arg>G_Screenshoot_Path</arg>
+<arg>%{G_Project_Path}\\TestSuites\\Screenshoot</arg>
+</arguments>
+<msg timestamp="20171106 18:07:53.006" level="INFO">Environment variable 'G_Screenshoot_Path' set to value 'E:\GitHub\WebAutoTest\TestSuites\Screenshoot'.</msg>
+<status status="PASS" endtime="20171106 18:07:53.006" starttime="20171106 18:07:53.005"></status>
+</kw>
+<status status="PASS" endtime="20171106 18:07:53.006" starttime="20171106 18:07:53.002"></status>
+</kw>
+<kw name="打开浏览器" library="浏览器基本操作">
+<arguments>
+<arg>%{Gis_Url}</arg>
+<arg>%{Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>url=${url}</arg>
+<arg>browser=${browser}</arg>
+</arguments>
+<msg timestamp="20171106 18:07:53.008" level="INFO">Opening browser 'Chrome' to base url 'http://120.77.216.30/ptt/a/login'</msg>
+<status status="PASS" endtime="20171106 18:08:00.625" starttime="20171106 18:07:53.007"></status>
+</kw>
+<status status="PASS" endtime="20171106 18:08:00.626" starttime="20171106 18:07:53.007"></status>
+</kw>
+<kw name="输入用户名" library="LoginPage">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="清除输入框内容" library="定位元素操作">
+<arguments>
+<arg>&amp;{LoginVariable}[name_id]</arg>
+</arguments>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" endtime="20171106 18:08:00.681" starttime="20171106 18:08:00.628"></status>
+</kw>
+<status status="PASS" endtime="20171106 18:08:00.682" starttime="20171106 18:08:00.627"></status>
+</kw>
+<kw name="输入框输入内容" library="定位元素操作">
+<arguments>
+<arg>&amp;{LoginVariable}[name_id]</arg>
+<arg>${username}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20171106 18:08:00.683" level="INFO">Typing text 'qiaoxd' into text field 'username'</msg>
+<status status="PASS" endtime="20171106 18:08:00.758" starttime="20171106 18:08:00.683"></status>
+</kw>
+<status status="PASS" endtime="20171106 18:08:00.758" starttime="20171106 18:08:00.682"></status>
+</kw>
+<status status="PASS" endtime="20171106 18:08:00.759" starttime="20171106 18:08:00.626"></status>
+</kw>
+<kw name="输入密码" library="LoginPage">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>&amp;{LoginVariable}[password_id]</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20171106 18:08:00.762" level="INFO">Typing password into text field 'password'</msg>
+<status status="PASS" endtime="20171106 18:08:00.863" starttime="20171106 18:08:00.761"></status>
+</kw>
+<status status="PASS" endtime="20171106 18:08:00.863" starttime="20171106 18:08:00.760"></status>
+</kw>
+<kw name="点击登录" library="LoginPage">
+<kw name="点击元素" library="定位元素操作">
+<arguments>
+<arg>xpath=//span[@text='登录']</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20171106 18:08:00.865" level="INFO">Clicking element 'xpath=//span[@text='登录']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20171106 18:08:01.275" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20171106 18:08:01.276" starttime="20171106 18:08:00.884"></status>
+</kw>
+<msg timestamp="20171106 18:08:01.278" level="FAIL">ValueError: Element locator 'xpath=//span[@text='登录']' did not match any elements.</msg>
+<status status="FAIL" endtime="20171106 18:08:01.278" starttime="20171106 18:08:00.864"></status>
+</kw>
+<status status="FAIL" endtime="20171106 18:08:01.279" starttime="20171106 18:08:00.864"></status>
+</kw>
+<status status="FAIL" endtime="20171106 18:08:01.279" starttime="20171106 18:08:00.863"></status>
+</kw>
+<status status="FAIL" endtime="20171106 18:08:01.280" starttime="20171106 18:07:53.001"></status>
+</kw>
+<status status="FAIL" endtime="20171106 18:08:01.280" critical="yes" starttime="20171106 18:07:53.000">ValueError: Element locator 'xpath=//span[@text='登录']' did not match any elements.</status>
+</test>
+<status status="FAIL" endtime="20171106 18:08:01.281" starttime="20171106 18:07:52.232"></status>
+</suite>
+<status status="FAIL" endtime="20171106 18:08:01.282" starttime="20171106 18:07:52.230"></status>
+</suite>
+<status status="FAIL" endtime="20171106 18:08:01.284" starttime="20171106 18:07:52.212"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="WebAutoTest" pass="0">WebAutoTest</stat>
+<stat fail="1" id="s1-s1" name="TestSuites" pass="0">WebAutoTest.TestSuites</stat>
+<stat fail="1" id="s1-s1-s1" name="Loginsuite" pass="0">WebAutoTest.TestSuites.Loginsuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20171106 18:07:52.189" level="ERROR">Ignoring second test suite init file 'E:\GitHub\WebAutoTest\PageObject\Core\__init__.txt'.</msg>
+</errors>
+</robot>

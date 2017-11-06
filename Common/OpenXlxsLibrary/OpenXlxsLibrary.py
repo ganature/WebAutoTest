@@ -26,7 +26,6 @@ class OpenXlxsLibrary:
 
     def open_excel_xlxs(self, filename):
         """
-
         :param filename:
         :return:
         """
@@ -76,7 +75,6 @@ class OpenXlxsLibrary:
 
     def get_max_row(self,sheet_name):
         """
-
         :param sheet_name:
         :return:
         """
@@ -85,7 +83,6 @@ class OpenXlxsLibrary:
 
     def get_max_col(self,sheet_name):
         """
-
         :param sheet_name:
         :return:
         """
@@ -94,7 +91,6 @@ class OpenXlxsLibrary:
 
     def get_TestCase_Parmerner(self,sheet_name,test_case_name):
         """
-
         :param sheet_name: sheet名，也是测试模块名
         :param test_case_name: 测试方法名
         :return: 测试参数列表

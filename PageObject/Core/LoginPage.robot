@@ -3,7 +3,7 @@ Documentation     定义了登录页面的用户名、密码、和登录按钮�
 Resource          ../../基本操作/BaseOperator.robot
 
 *** Variables ***
-&{LoginVariable}    name_id=loginName_id    password_id=password_id    login_id=my_login_bt
+&{LoginVariable}    name_id=username    password_id=password    login_id=
 
 *** Keywords ***
 输入密码
@@ -18,7 +18,7 @@ Resource          ../../基本操作/BaseOperator.robot
 
 点击登录
     #点击登录
-    点击按钮    &{LoginVariable}[login_id]
+    点击元素    xpath=//span[@text='登录']
 
 获取登录页面的标题
     #获取登录页面的标题

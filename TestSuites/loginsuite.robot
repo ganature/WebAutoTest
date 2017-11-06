@@ -37,3 +37,6 @@ test_reque
     Create Session    ${alias}    ${url}
     ${data}    Get Request    ${alias}    ${url}
     log    ${data.content}
+
+test_login
+    登录验证测试    qiaoxd    111111

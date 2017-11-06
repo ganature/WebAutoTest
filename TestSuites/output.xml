@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171101 16:42:38.675" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="E:\GitHub\WebAutoTest\TestSuites\demosuite.robot" id="s1" name="Demosuite">
+<test id="s1-t1" name="T_Case_1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Open Browser</arg>
+</arguments>
+<msg timestamp="20171101 16:42:38.784" level="INFO">Open Browser</msg>
+<status status="PASS" endtime="20171101 16:42:38.784" starttime="20171101 16:42:38.784"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOST}</arg>
+<arg>chrome</arg>
+<arg>remote_url=http://0.0.0.0:4444/wd/hub</arg>
+</arguments>
+<msg timestamp="20171101 16:42:38.785" level="INFO">Opening browser 'chrome' to base url 'https://www.baidu.com' through remote server at 'http://0.0.0.0:4444/wd/hub'</msg>
+<msg timestamp="20171101 16:42:38.786" level="INFO">Could not get IP address for host: 0.0.0.0</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20171101 16:42:38.789" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20171101 16:42:38.789" starttime="20171101 16:42:38.788"></status>
+</kw>
+<msg timestamp="20171101 16:42:38.789" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20171101 16:42:38.793" level="FAIL">URLError: &lt;urlopen error [Errno 10049] &gt;</msg>
+<status status="FAIL" endtime="20171101 16:42:38.793" starttime="20171101 16:42:38.785"></status>
+</kw>
+<status status="FAIL" endtime="20171101 16:42:38.793" critical="yes" starttime="20171101 16:42:38.784">URLError: &lt;urlopen error [Errno 10049] &gt;</status>
+</test>
+<status status="FAIL" endtime="20171101 16:42:38.795" starttime="20171101 16:42:38.679"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Demosuite" pass="0">Demosuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20171101 16:42:38.789" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+</errors>
+</robot>

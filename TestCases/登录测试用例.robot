@@ -2,7 +2,6 @@
 Resource          ../PageObject/Core/LoginPage.robot
 Resource          ../setting.robot
 
-
 *** Variables ***
 
 *** Keywords ***
