@@ -1,6 +1,7 @@
 *** Settings ***
 Resource          ../PageObject/Core/LoginPage.robot
 Resource          ../setting.robot
+Resource          ../基本操作/测试结果.robot
 
 *** Variables ***
 
@@ -11,10 +12,8 @@ Resource          ../setting.robot
     ...    \ \ \ \ \ \ \ \ \ \ 1、输入用户名
     ...    \ \ \ \ \ \ \ \ \ 2、输入密码
     ...    \ \ \ \ \ \ \ \ 3、点击登录按钮
-    initial_config
-    打开浏览器    %{Gis_Url}    %{Browser}
     输入用户名    ${username}
     输入密码    ${password}
     点击登录
     延迟等待    5
-    关闭当前浏览器
+    检查标题    公共对讲系统管理云平台

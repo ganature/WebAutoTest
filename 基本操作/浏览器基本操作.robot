@@ -3,9 +3,9 @@ Resource          ../share_resource.robot
 
 *** Keywords ***
 打开浏览器
-    [Arguments]    ${url}    ${browser}    # 网站地址|浏览器类型
+    [Arguments]    ${url}    ${Browser}    # 网站地址|浏览器类型
     #打开浏览器    网站地址    浏览器类型
-    Open Browser    url=${url}    browser=${browser}
+    Open Browser    url=${url}    browser=${Browser}
 
 关闭当前浏览器
     #关闭当前浏览器
@@ -55,7 +55,7 @@ Resource          ../share_resource.robot
     ...    Matches by window title
     ...    name
     ...
-    ...    Select Window `|` name=${name}
+    ...    Select Window `|` name
     ...    Matches by window javascript name
     ...    url
     ...
@@ -63,3 +63,11 @@ Resource          ../share_resource.robot
     ...    Matches by window's current URL
     #切换窗口    #name title url window handle
     Select Window    locator=${locator}
+
+获取元素的文本值
+    [Arguments]    ${locator}
+    Get Text    ${locator}
+
+获取元素的属性值
+    [Arguments]    ${locator}
+    Get Value       ${locator}

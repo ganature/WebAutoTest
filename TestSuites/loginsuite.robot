@@ -7,8 +7,7 @@ Resource          ../Common/测试数据.robot
 Resource          ../Common/数据库操作.robot
 Resource          ../share_resource.robot
 Resource          ../setting.robot
-Library           OperatingSystem
-Library           RequestsLibrary
+Resource          ../PageObject/Core/MainPage.robot
 
 *** Variables ***
 ${list}           None
@@ -39,4 +38,8 @@ test_reque
     log    ${data.content}
 
 test_login
+    [Setup]    Common_setUp
     登录验证测试    qiaoxd    111111
+    点击首页
+    点击用户列表
+    [Teardown]    Common_tearDown
